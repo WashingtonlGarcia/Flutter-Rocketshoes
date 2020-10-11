@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:rocketshoes/app/routes/routes.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -12,13 +13,12 @@ class HomeView extends StatelessWidget {
           'assets/images/logo.svg',
           height: 25,
         ),
-        backgroundColor: Colors.transparent,
         actions: [
           IconButton(
               icon: const Icon(
                 Icons.shopping_basket,
               ),
-              onPressed: () {}),
+              onPressed: () => Get.toNamed(Routes.cart)),
         ],
       ),
       body: GridView.count(
