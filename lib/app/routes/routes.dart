@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:rocketshoes/app/bindings/home_binding.dart';
 import '../ui/views/views.dart';
 
 class Routes {
@@ -19,6 +20,7 @@ class Routes {
       default:
         return GetPageRoute(
           routeName: home,
+          binding: HomeBinding(),
           page: () => HomeView(),
         );
     }
